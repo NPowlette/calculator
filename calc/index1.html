@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+
+<div id="bord"><img src="images/border.png"></div>
+<div id="calc">
+	<form name="frm" style=" width: 305px; height: 340px; padding-left: 10px; padding-bottom: 10px; padding-top: 10px;">
+	
+	<input id="bar" name="result" style="margin-left: 18px;"></input>
+
+	<br/><br/>
+
+	<input type="button" value="1" name="1" onClick="run1()" style="width:70px;  background: blue; height:40px;">
+	<input type="button" value="2" name="2" onClick="run2()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="3" name="3" onClick="run3()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="+" name="plus" onClick="runplus()" style="width:70px; background: blue; height:40px;">
+
+	<br/>
+	<br/>
+
+	<input type="button" value="4" name="4" onClick="run4()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="5" name="5" onClick="run5()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="6" name="6" onClick="run6()" style="width:70px; background: blue;height:40px;">
+	<input type="button" value="-" name="minus" onClick="runminus()" style="width:70px; background: blue; height:40px;">
+
+	<br/>
+	<br/>
+
+	<input type="button" value="7" name="7" onClick="run7()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="8" name="8" onClick="run8()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="9" name="9" onClick="run9()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="*" name="multiply" onClick="runmultiply()" style="width:70px; background: blue; height:40px;">
+
+	<br/>
+	<br/>
+
+	<input type="button" value="0" name="0" onClick="run0()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="00" name="" onClick="evalu()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="c" name="" onClick="run()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="/" name="div" onClick="rundiv()" style="width:70px; background: blue; height:40px;">
+
+	<br/>
+	<br/>
+	
+	<input type="button" value="ac" name="ac" onClick="runclear()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="%" name="perc" onClick="runperc()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="." name="." onClick="rundec()" style="width:70px; background: blue; height:40px;">
+	<input type="button" value="=" name="equal" onClick="evalu()" style="width:70px; background: blue; height:40px;">
+</div>
+
+
+	</form>
+
+	<script>
+		
+		function run1(){
+			document.frm.result.value +="1";
+		}
+
+		function run2(){
+			document.frm.result.value +="2";
+		}
+
+		function run3(){
+			document.frm.result.value +="3";
+		}
+
+		function runplus(){
+			document.frm.result.value +="+";
+		}
+
+		function run4(){
+			document.frm.result.value +="4";
+		}
+
+		function run5(){
+			document.frm.result.value +="5";
+		}
+
+		function run6(){
+			document.frm.result.value +="6";
+		}
+
+		function runminus(){
+			document.frm.result.value +="-";
+		}
+
+		function run7(){
+			document.frm.result.value +="7";
+		}
+
+		function run8(){
+			document.frm.result.value +="8";
+		}
+
+		function run9(){
+			document.frm.result.value +="9";
+		}
+
+		function runmultiply(){
+			document.frm.result.value +="*";
+		}
+
+		function run0(){
+			document.frm.result.value +="0";
+		}
+
+		function evalu(){
+			var evalue = eval(document.frm.result.value)
+			document.frm.result.value = evalue;
+		}
+
+		function rundec(){
+			document.frm.result.value +=".";
+		}
+
+		function runclear(){
+			frm.reset();
+		}
+
+		function rundiv(){
+			document.frm.result.value +="/";
+		}
+
+		function runperc(){
+			document.frm.result.value +="%";
+		}
+	</script>
+</html>

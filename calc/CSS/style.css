@@ -1,0 +1,29 @@
+#calc{
+	margin-top: 13px;
+	margin-left: 16px;	
+	position: absolute;
+}
+
+form{
+	background: url(http://www.titanui.com/wp-content/uploads/2013/02/06/Elegant-Blue-Floral-Patterns-Background-Vector-02.jpg)
+}
+ 
+input{
+	width: 250px;
+	height: 20px;
+}
+
+#bord{
+	width: 350px;
+	height: 387px;
+	background-color: DeepSkyBlue;
+	position: absolute;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
